@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="Media-Queries.css">
+    <link rel="stylesheet" type="text/css" href="keyframe-animations.css">
+    <script src="TJG.js"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    
+    <div class="bg">
+        <div class="contents-cont">
+            <div class="left">
+                <div class="triangle"></div>
+                <div class="triangle1"></div>
+                <div class="triangle2"></div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="square1"></div>
+                <div class="square2"></div>
+                
+                <div class="envelope">
+                    <img src="/envelope-front.png" alt="Front of envelope" class="env-front">
+                    <img src="/envelope-back.png" alt="Envelope back" class="env-back">
+                    <img src="/envelope-flap.png" alt="Envelope flap" class="env-flap">
+                    <div class="logo-cont">
+                        <img src="/images/Contact-form-images/The Jupiter Gallery Purple.png" alt="Band logo" class="logo">
+                        <img src="/images/Contact-form-images/Star.png" alt="Star" class="star1">
+                        <img src="/images/Contact-form-images/Star.png" alt="Star" class="star2">
+                        <img src="/images/Contact-form-images/Star.png" alt="Star" class="star3">
+                        <img src="/images/Contact-form-images/Star.png" alt="Star" class="star4">
+                        <img src="/images/Contact-form-images/Star.png" alt="Star" class="star5">
+                        <img src="/images/Contact-form-images/Star.png" alt="Star" class="star6">
+                        <img src="/images/Contact-form-images/Star.png" alt="Star" class="star7">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <form action="https://api.web3forms.com/submit" method="POST" class="cform" id="tjg-form">
+                    <input type="hidden" name="access_key" value="2588e0f2-3af8-4c25-81d1-a79939d3b67c">
+                    <div class="contact">
+                        <p>CONTACT US</p>
+                        <h3 class="sub-text">Got a question for us?</h3>
+                        <h3 class="sub-text">Please fill in the fields below</h3>
+                            <input class="fn" type="text" name="firstname" placeholder="First name" id="fn" required>
+                            <input class="ln" name="lastname" placeholder="Last name" required>
+                            <input class="em" type="email" placeholder="Email" required>
+                            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+                            <input type="submit" value="Submit">
+                            
+                    </div>
+                </form>
+
+                <div id="responseMessage"></div>
+
+                <script src="contact.js"></script>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

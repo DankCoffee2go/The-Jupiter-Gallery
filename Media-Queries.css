@@ -1,0 +1,174 @@
+@media only screen and (max-width: 700px) {
+
+    .bg {
+  
+        width: 100%;
+        overflow: hidden;
+    
+    }
+  
+    .contents-cont {
+  
+        flex-direction: column;
+        gap: .01rem;
+    }
+  
+    .right {
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+  
+    .envelope{
+        margin-top: 15rem;
+  
+  
+    }
+  
+    .env-front {
+  
+        max-width: 10rem;
+        z-index: 2;
+    }
+      
+    .env-back {
+      
+        max-width: 10rem;
+        position: absolute;
+        z-index: 1;
+    }
+      
+    .env-flap {
+      
+        max-width: 10em;
+        position: absolute;
+        z-index: 1;
+        margin-top: 4rem;
+        animation: raise 3s linear;
+    }
+      
+    .logo {
+      
+        max-width: 10rem;
+        margin-top: -14rem;
+        margin-left: -5rem;
+        position: absolute;
+        animation: MoveUpDown 3s ease-in-out infinite, raise 3s linear;
+        z-index: 1;
+    }
+  
+    .cform {
+        
+        margin-bottom: 15rem;
+        background: none;
+        min-width: 100vw;
+        border: none;
+      
+    }
+  
+    ::placeholder{
+  
+        color: #c036b2;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+    }
+  
+    .triangle{
+        margin-top: 400px;
+        margin-left: -350px;
+   
+    }
+
+    .triangle1{
+        margin-top: 700px;
+        margin-left: 350px;
+   
+    }
+
+    .triangle2{
+        margin-top: 1500px;
+        margin-left: -450px;
+  
+    }
+      
+      
+    .circle1 {
+        margin-top: 300px;
+        margin-left: -300px;
+    
+    }
+      
+    .circle2 {
+        margin-top: -50px;
+        margin-left: -450px;
+        
+    }
+      
+    .star1{
+        margin-top: -9rem;
+        margin-left: 3rem;
+  
+    }
+      
+    .star2{
+        margin-top: -9rem;
+        margin-left: -4.5rem;
+  
+    }
+      
+    .star3{
+        margin-top: -13rem;
+        margin-left: -3rem;
+  
+    }
+      
+    .star4{
+      
+        margin-top: -14rem;
+        margin-left: 2rem;
+   
+    }
+
+
+    .star5{
+        position: absolute;
+        margin-top: 20rem;
+        margin-left: 6rem;
+        z-index: 1;
+    }
+      
+      
+    .star6{
+        margin-top: 20rem;
+        margin-left: -15rem;
+        z-index: 1;
+    }
+      
+    .star7{
+        margin-top: -11rem;
+        margin-left: -13rem;
+    }
+
+       
+  
+    textarea {
+  
+        color: black;
+        min-height: 6rem;
+    }
+  
+    input[type=submit] {
+        background-color: var(--tritop);
+        color: #ab69cf;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 5rem;
+    }
+
+}

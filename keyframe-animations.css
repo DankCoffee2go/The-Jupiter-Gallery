@@ -1,0 +1,36 @@
+/*animations*/
+@keyframes raise {
+    0% {
+        transform: translate(0, 150px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 10);
+    }
+  }
+  
+  @keyframes MoveUpDown {
+    0% { 
+        transform: translateY(0); 
+    }
+    50% { transform: translateY(-15px); }
+  }
+  
+  @keyframes MoveUpDownRotate {
+    0% { 
+        transform: translateY(0); 
+        transform: rotate(25deg);
+    }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes Twinkle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }

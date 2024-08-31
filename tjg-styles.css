@@ -1,0 +1,302 @@
+*, *::before, *::after {
+
+  box-sizing: border-box;
+}
+
+:root {
+
+  --tjg: #9931b0;
+  --light: #b734d5;
+  --contactBGtop: #FF80FF;
+  --contactBGbottom: #6FE2FF;
+  --tritop: #C0C1FF;
+  --tribottom: #E4F6FF;
+  
+}
+
+html {
+  font-size: 20px;
+
+}
+
+body {
+  background-color: rgb(225, 193, 255);
+  margin: 0%;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.main-body {
+
+ 
+}
+
+.hr {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  height: 8px; /* Adjust the height as needed */
+  background-color: white;
+  width: 100%; /* Make sure it stretches across the entire width */
+}
+
+.fixed-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: blueviolet;
+  padding: 1em;
+}
+
+.fixed-banner-logo {
+  width: 550px;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: filter 0.1s ease-in-out;
+}
+
+.fixed-banner-logo:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); /* Add this new rule */
+}
+
+.header-whole {
+  width: 100%;
+  background-size: cover;
+  background-color: blueviolet;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.nav-bar {
+  font-weight: bold;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  height: 2em;
+  min-height: 30px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  object-fit: cover;
+  
+}
+
+.nav-button {
+  display: flex;
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  background-image: linear-gradient(to bottom, rgb(204, 150, 255), blueviolet);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border: 0;
+  cursor: pointer;
+  background-size: 200% 100%;
+  transition: background-position 0.2s linear, font-size 0.2s ease, background-image 0.3s ease;
+  font-family: merriweather, sans-serif;
+}
+
+.nav-button:hover {
+  animation: gradientMove 1s linear infinite;
+  font-size: 0.9em;
+  font-weight: bold;
+  background-image: linear-gradient
+    (to bottom, 
+    rgb(238, 132, 190), 
+    rgb(148, 9, 113)
+    rgb(238, 132, 190)
+    );
+  background-position: 100% 50%;
+  background-size: 100% 200%;
+  
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 50% 200%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.nav-button:active {
+  background-image: none;
+  background-color: white;
+  color: purple;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 3;
+  padding: 10px;
+}
+
+.hamburger-menu span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding: 1em 2em;
+  background-image: linear-gradient(to right, 
+    #FF69B4, 
+    #1E90FF,
+    #FF69B4
+  );
+  background-size: 200% 100%;
+  position: relative;
+  animation: moveGradient 2s linear infinite;
+  z-index: 1; 
+}
+
+.social-icons::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, transparent, blueviolet);
+  pointer-events: none;
+  z-index: 2; 
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
+}
+
+.social-icons img {
+    width: 1.5em;
+    height: 1.5em;
+    object-fit: contain; 
+    position: relative;
+    z-index: 3;
+    transition: transform 0.3s ease;
+  }
+
+.social-icons a {
+  position: relative; 
+  z-index: 3; 
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.current-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #1E90FF;
+}
+
+.stargaze-cover-art {
+  height: 100%;
+  width: 450px;
+}
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+  .header-whole {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar {
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    background-color: rgb(82, 0, 82);
+    background-size: 200% 100%;
+  }
+
+  .nav-button:hover {
+    animation: gradientMove 1s linear infinite;
+    font-size: 3em;
+    font-weight: bold;
+    background-image: linear-gradient
+      (to left, 
+      rgb(238, 132, 190), 
+      rgb(148, 9, 113)
+      rgb(238, 132, 190)
+      );
+    background-position: 100% 50%;
+    background-size: 200% 100%;
+  }
+
+  
+
+  .social-icons {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .fixed-banner-logo {
+    width: 400px;
+    min-width: 300px;
+  }
+
+  .nav-button {
+    display: none;
+    font-size: 2em;
+    width: 100%;
+    height: 4em;
+    background-image: linear-gradient(to bottom, rgb(238, 132, 190), rgb(148, 9, 113));
+  }
+
+  .nav-button.show {
+    display: flex;
+  }
+
+  .nav-bar.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: flex; 
+    align-self: flex-end;
+  }
+}
+
+a {
+  text-decoration: none;
+}
