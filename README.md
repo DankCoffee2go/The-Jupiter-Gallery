@@ -4,5 +4,7 @@ This is a website for the band 'The Jupiter Gallery', showcasing their music, ma
 
 Some of the main features include tastful animations, navigation toggles, being fully responsive, and to create an area where the band members can edit to include new band updates & information.
 
+All ammendments must be pushed to the 'Pre-commit' branch for authorisation before committing to main
+
 
 
